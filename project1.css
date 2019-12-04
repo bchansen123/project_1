@@ -1,11 +1,52 @@
-.body {
+body {
     text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.control{
+    margin-top: 30px;
 }
 
 .header{
     text-align: center;
 }
 
-.h1 {
-    background-color: aqua;
+.subtitle {
+    text-align: center;
+}
+
+.title.is-1{
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 20px;
+    font-weight: bold;
+
+}
+
+.tile.is-child.box{
+    border: 2px solid black;
+}
+
+.button.is-primary1{
+    color: white;
+    background-color: #00acee;
+}
+
+.button.is-primary2{
+    color: white;
+    background-color: #3b5998;
+}
+
+.button.is-primary3{
+    color: black;
+    background-color: purple;
+}
+
+.button.is-primary4{
+    color: black;
+    background-color: #FF4301;
+}
+
+.label{
+    text-align: left;
 }
