@@ -1,2 +1,2 @@
-# Project1_Test
-Way for me to upload my code for project 1
+# Project1
+Group project created by Branden_Hansen, Jarom Wright, and Drew Young for coding bootcamp
