@@ -17,8 +17,21 @@
         <nav class="navbar">
                 <div class="container">
                     <div class="navbar-brand">
-                        <a class="navbar-item" href="../">
-                                <img src="../images/bulma.png" alt="Logo">
+                            <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+                                    <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+                                    <a href="#" class="w3-bar-item w3-button">Link 1</a>
+                                    <a href="#" class="w3-bar-item w3-button">Link 2</a>
+                                    <a href="#" class="w3-bar-item w3-button">Link 3</a>
+                                  </div>
+                                  
+                                  <!-- Page Content -->
+                                  <div class="w3-teal">
+                                    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+                                    <div class="w3-container">
+                                    </div>
+                                  </div>
+                        <a class="navbar-item" href="">
+                                <img src="" alt="Logo">
                             </a>
                         <span class="navbar-burger burger" data-target="navbarMenu">
                                 <span></span>
@@ -30,21 +43,6 @@
                         <div class="navbar-end">
                             <a class="navbar-item is-active">
                                     Home
-                                </a>
-                            <a class="navbar-item">
-                                    Examples
-                                </a>
-                            <a class="navbar-item">
-                                    Features
-                                </a>
-                            <a class="navbar-item">
-                                    Team
-                                </a>
-                            <a class="navbar-item">
-                                    Archives
-                                </a>
-                            <a class="navbar-item">
-                                    Help
                                 </a>
                             <div class="navbar-item has-dropdown is-hoverable">
                                 <a class="navbar-link">
@@ -62,9 +60,6 @@
                                         </a>
                                     <hr class="navbar-divider">
                                     <div class="navbar-item">
-                                        Login
-                                    </div>
-                                    <div class="navbar-item">
                                         Logout
                                     </div>
                                 </div>
@@ -76,6 +71,7 @@
             <!-- END NAV -->
 
     <div class="container">
+
         <div id="flow">
             <span class="flow-1"></span>
             <span class="flow-2"></span>
@@ -83,13 +79,21 @@
         </div>
         <div class="section">
             <div class="box">
+                
                 <div class="field has-addons">
                     <div class="control is-expanded">
-                        <input class="input has-text-centered" type="search" placeholder="Search Queries Here">
+                        <input class="input has-text-centered" type="search" placeholder="Search Topics Here">
                     </div>
                     <div class="control">
                         <a class="button is-info">Search</a>
                     </div>
+                    
+                    <div class="soc">
+                            <a href="https//:" onclick="myfunction()"><i class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a>
+                            <a href="https//:" onclick="myfunction()"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+                            <a href="https//:" onclick="myfunction()"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+                            <a href="https//:" onclick="myfunction()"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                        </div>
                 </div>
             </div>
             <!-- Developers -->
@@ -129,19 +133,24 @@
     <footer class="footer">
             <div class="container">
                 <div class="content has-text-centered">
-                    <div class="soc">
-                        <a href="#"><i class="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                    </div>
-                    <p>
-                        <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
+                    
+
+                    <!--    <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
                         The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. <br>
-                    </p>
+                    -->
                 </div>
             </div>
         </footer>
+
+        <script>
+                function w3_open() {
+                  document.getElementById("mySidebar").style.display = "block";
+                };
+                
+                function w3_close() {
+                  document.getElementById("mySidebar").style.display = "none";
+                };
+        </script>
 
 
 </body>
