@@ -42,26 +42,68 @@
                     <div id="navbarMenu" class="navbar-menu">
                         <div class="navbar-end">
                             <a class="navbar-item is-active">
-                                    Home
-                                </a>
+                                Home
+                            </a>
                             <div class="navbar-item has-dropdown is-hoverable">
                                 <a class="navbar-link">
                                         Account
                                     </a>
                                 <div class="navbar-dropdown">
                                     <a class="navbar-item">
-                                            Dashboard
+                                    <button>Dashboard</button>
                                         </a>
                                     <a class="navbar-item">
-                                            Profile
+                                           <button>Profile</button>
                                         </a>
                                     <a class="navbar-item">
-                                            Settings
+                                        <button>Settings</button>
                                         </a>
                                     <hr class="navbar-divider">
-                                    <div class="navbar-item">
+                                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; text-align: left;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+                                    <a class="navbar-item"><button>
                                         Logout
-                                    </div>
+                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -76,8 +118,11 @@
             <span class="flow-1"></span>
             <span class="flow-2"></span>
             <span class="flow-3"></span>
+            
         </div>
+
         <div class="section">
+                
             <div class="box">
                 
                 <div class="field has-addons">
@@ -87,12 +132,13 @@
                     <div class="control">
                         <a class="button is-info">Search</a>
                     </div>
-                    <div class="soc">
-                            <a href="https//:" onclick="myfunction()"><i id="pinterest" class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a>
-                            <a href="https//:" onclick="myfunction()"><i id="youtube" class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-                            <a href="https//:" onclick="myfunction()"><i id="facebook" class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-                            <a href="https//:" onclick="myfunction()"><i id="twitter" class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
-                        </div>
+                    
+                </div>
+                <div class="soc">
+                        <a onclick="myfunction()"><i id="pinterest" class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a>
+                        <a onclick="myfunction()"><i id="youtube" class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+                        <a onclick="myfunction()"><i id="instagram" class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                        <a onclick="myfunction()"><i id="twitter" class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
                 </div>
             </div>
             <!-- Developers -->
