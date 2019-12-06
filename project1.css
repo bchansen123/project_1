@@ -26,29 +26,6 @@ body {
 
 }
 
-.tile.is-child.box{
-    border: 2px solid black;
-}
-
-.button.is-primary1{
-    color: white;
-    background-color: #00acee;
-}
-
-.button.is-primary2{
-    color: white;
-    background-color: #3b5998;
-}
-
-.button.is-primary3{
-    color: black;
-    background-color: purple;
-}
-
-.button.is-primary4{
-    color: black;
-    background-color: #FF4301;
-}
 
 .label{
     text-align: left;
