@@ -1,6 +1,9 @@
 body {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
+    background-image: url("https://i.ytimg.com/vi/rdGhwe1Q6LY/maxresdefault.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .control{
@@ -23,29 +26,6 @@ body {
 
 }
 
-.tile.is-child.box{
-    border: 2px solid black;
-}
-
-.button.is-primary1{
-    color: white;
-    background-color: #00acee;
-}
-
-.button.is-primary2{
-    color: white;
-    background-color: #3b5998;
-}
-
-.button.is-primary3{
-    color: black;
-    background-color: purple;
-}
-
-.button.is-primary4{
-    color: black;
-    background-color: #FF4301;
-}
 
 .label{
     text-align: left;
@@ -171,6 +151,10 @@ body {
     animation: animatezoom 0.6s
   }
   
+.card.large{
+  background-color: lightsteelblue;
+}
+
   @-webkit-keyframes animatezoom {
     from {-webkit-transform: scale(0)} 
     to {-webkit-transform: scale(1)}
