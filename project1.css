@@ -31,21 +31,37 @@ body {
     text-align: left;
 }
 
+.fa {
+  padding: 5px;
+  font-size: 40px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 1px;
+}
+
+.fa-youtube {
+  background-color: #bb0000;
+  color: white;
+  cursor: pointer;
+}
+
 .fa-pinterest{
-    color: red;
+    background-color: #cb2027;
+    color: white;
     cursor: pointer;
 }
 
 .fa-instagram{
-    color:brown;
+  background-color: #125688;
+    color:white;
     cursor: pointer;
 }
 
 .fa-twitter{
-    color: blue;
-    border-color: white;
-    border-width: 0px;
-    cursor: ß;
+  background-color: #55acee;
+    color:white;
+    cursor: pointer;
 }
 
   body {font-family: Arial, Helvetica, sans-serif;}
