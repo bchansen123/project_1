@@ -31,6 +31,10 @@ body {
     text-align: left;
 }
 
+.fa:hover {
+  opacity: .4;
+}
+
 .fa {
   padding: 5px;
   font-size: 40px;
