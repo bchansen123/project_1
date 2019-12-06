@@ -1,6 +1,9 @@
 body {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
+    background-image: url("https://i.ytimg.com/vi/rdGhwe1Q6LY/maxresdefault.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .control{
@@ -171,6 +174,10 @@ body {
     animation: animatezoom 0.6s
   }
   
+.card.large{
+  background-color: lightsteelblue;
+}
+
   @-webkit-keyframes animatezoom {
     from {-webkit-transform: scale(0)} 
     to {-webkit-transform: scale(1)}
