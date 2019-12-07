@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Project_1</title>
+    <title>Welcome to Sircle</title>
     <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
@@ -28,8 +28,8 @@
                 </div>
 
                 <!-- Page Content -->
-               <a class="navbar-item" href="">
-                    <img src="" alt="Logo">
+                <a class="navbar-item" href="#">
+                    <img src="assets/images/sircle.png" alt="Logo" style="margin-left: 30px;">
                 </a>
             </div>
             <div id="navbarMenu" class="navbar-menu">
@@ -47,7 +47,7 @@
                             </a>
                             <hr class="navbar-divider">
                             <button onclick="document.getElementById('id01').style.display='block'"
-                                style="width:auto; text-align: left;">Login</button>
+                                style="width:auto; text-align: center; margin-right: 10px;">Login</button>
 
                             <div id="id01" class="modal">
 
@@ -67,7 +67,8 @@
 
                                         <button type="submit">Login</button>
                                         <label>
-                                            <input type="checkbox" checked="checked" name="remember"> <a href="#">Remember me</a>
+                                            <input type="checkbox" checked="checked" name="remember"> <a
+                                                href="#">Remember me</a>
                                         </label>
                                     </div>
 
@@ -75,7 +76,7 @@
                                         <button type="button"
                                             onclick="document.getElementById('id01').style.display='none'"
                                             class="cancelbtn">Cancel</button>
-                                        <span class="psw">Forgot <a href="#">password?</a></span>
+                                        <span class="psw"><a href="#">Forgot password?</a></span>
                                     </div>
                                 </form>
                             </div>
@@ -129,7 +130,7 @@
             </div>
             <!-- Twitter -->
             <div class="row columns">
-                <div class="column is-one-third">
+                <div class="column is-one-third twitter">
                     <div class="card large">
                         <div class="card-image">
                             <figure class="image">
@@ -149,6 +150,7 @@
                                     <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
                                     <p class="subtitle is-6"></p>
                                 </div>
+                                <a href='https://www.twitter.com/' id="twitterbtn" class="fa fa-twitter fa-2x"></a>
                             </div>
                             <div class="content">
                                 The Beast stumbled in the dark for it could no longer see the path. It started to
@@ -160,7 +162,7 @@
                     </div>
                 </div>
                 <!--Instagram-->
-                <div class="column is-one-third">
+                <div class="column is-one-third instagram">
                     <div class="card large">
                         <div class="media-content">
                             <div class="card-content">
@@ -172,6 +174,7 @@
                                         </figure>
                                     </div>
                                     <p class="title is-4 no-padding">Instagram</p>
+                                    <a href='https://www.instagram.com/' id="instagrambtn" class="fa fa-instagram fa-2x" style="margin-left: 95px;"></a>
                                 </div>
 
                                 <div class="card-image">
@@ -194,67 +197,70 @@
                         </div>
                     </div>
                 </div>
-                    <!-- Pinterest -->
-                    <div class="column is-one-third">
-                        <div class="card large">
-                            <div class="media-content">
-                                <div class="card-content">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <figure class="image is-48x48">
-                                                <img src="https://bulma.io/images/placeholders/96x96.png"
-                                                    alt="Placeholder image">
-                                            </figure>
-                                        </div>
-                                        <p class="title is-4 no-padding">Poster</p>
-                                    </div>
-
-                                    <div class="card-image">
-                                        <figure class="image">
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLNpV2iyRzVUT8jvEK5QCFXqbsX-gdRXhOTciWh0caM2YPcgybA&s"
-                                                id="image-1">
+                <!-- Pinterest -->
+                <div class="column is-one-third pinterest">
+                    <div class="card large">
+                        <div class="media-content">
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                            <img src="https://bulma.io/images/placeholders/96x96.png"
+                                                alt="Placeholder image">
                                         </figure>
                                     </div>
-                                    <div class="card-content">
-                                    </div>
-                                    <div class="content">
-                                        Link to site content came from.
-                                    </div>
+                                    <p class="title is-4 no-padding">Poster</p>
+                                    <a href='https://www.pinterest.com/' id="pinterestbtn" class="fa fa-pinterest fa-2x" style="margin-left: 135px;"></a>
+                                </div>
+
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLNpV2iyRzVUT8jvEK5QCFXqbsX-gdRXhOTciWh0caM2YPcgybA&s"
+                                            id="image-1">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                </div>
+                                <div class="content">
+                                    Link to site content came from.
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
 
-        <!-- Youtube -->
-        <div class="column is-one-third">
-            <div class="card large">
-                <div class="media-content">
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-left">
-                                <figure class="image is-48x48">
-                                    <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+            <!-- Youtube -->
+            <div class="column is-one-third youtube">
+                <div class="card large">
+                    <div class="media-content">
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-left">
+                                    <figure class="image is-48x48">
+                                        <img src="https://bulma.io/images/placeholders/96x96.png"
+                                            alt="Placeholder image">
+                                    </figure>
+                                </div>
+                                <p class="title is-4 no-padding">Video Title</p>
+                                <a href='https://www.youtube.com/' id="youtubebtn" class="fa fa-youtube" style="margin-left: 83px;"></a>
+                            </div>
+
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLNpV2iyRzVUT8jvEK5QCFXqbsX-gdRXhOTciWh0caM2YPcgybA&s"
+                                        id="image-1">
                                 </figure>
                             </div>
-                            <p class="title is-4 no-padding">Video Title</p>
-                        </div>
-
-                        <div class="card-image">
-                            <figure class="image">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLNpV2iyRzVUT8jvEK5QCFXqbsX-gdRXhOTciWh0caM2YPcgybA&s"
-                                    id="image-1">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                        </div>
-                        <div class="content">
-                            Video Description
+                            <div class="card-content">
+                            </div>
+                            <div class="content">
+                                Video Description
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--Footer caused bug removing for now
+                <!--Footer caused bug removing for now
     <footer class="footer">
             <div class="container">
                 <div class="content has-text-centered">
@@ -267,15 +273,15 @@
             </div>
         </footer>
     -->
-            <script>
-                function w3_open() {
-                    document.getElementById("mySidebar").style.display = "";
-                };
+                <script>
+                    function w3_open() {
+                        document.getElementById("mySidebar").style.display = "";
+                    };
 
-                function w3_close() {
-                    document.getElementById("mySidebar").style.display = "none";
-                };
-            </script>
+                    function w3_close() {
+                        document.getElementById("mySidebar").style.display = "none";
+                    };
+                </script>
 
 
 </body>
