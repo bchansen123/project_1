@@ -2,58 +2,81 @@
 
 //Firebase login configuration
 var config = {
-    apiKey: "AIzaSyB4JtIwuFVptcZU9eg0phUsfQcEAKI19JE",
-    authDomain: "g-project-f-01.firebaseapp.com",
-    databaseURL: "https://g-project-f-01.firebaseio.com",
-    projectId: "g-project-f-01",
-    storageBucket: "g-project-f-01.appspot.com",
-    messagingSenderId: "540111291451",
-    appId: "1:540111291451:web:d2a0d7c5a63619902d081e",
-    measurementId: "G-T840SE3C03"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(config);
-  firebase.analytics();
+  apiKey: "AIzaSyB4JtIwuFVptcZU9eg0phUsfQcEAKI19JE",
+  authDomain: "g-project-f-01.firebaseapp.com",
+  databaseURL: "https://g-project-f-01.firebaseio.com",
+  projectId: "g-project-f-01",
+  storageBucket: "g-project-f-01.appspot.com",
+};
+// Initialize Firebase
+firebase.initializeApp(config);
 
-var database = initializeApp(config);
+var database = firebase.database();
 
 //Grabbing user information from fields that were filled out
 $("#submitButton").on("click", function(event){
-    event.preventDefault();
-    var userId = $("#userId").val();
-    var firstName = $("#firstName").val();
-    var lastName = $("#lastName").val();
-    var userEmail = $("#userEmail").val();
-    var password = $("#userPassword").val();
+  event.preventDefault();
+  var userId = $("#userId").val();
+  var password = $("#userPassword").val();
 
-    var newUser = {
-        user: userId,
-        f_name: firstName,
-        l_name: lastName,
-        email: userEmail,
-        userPassword: password
-    };
+  var newUser = {
+      user: userId,
+      userPassword: password
+  };
 
-    //Pushing new user on to the database
-    database.ref().push(newUser);
-    console.log(newUser);
+  //Pushing new user on to the database
+  database.ref().push(newUser);
+  console.log(newUser);
 
-    // Clearing out all fields
-    $("#userId").val("");
-    $("#firstName").val("");
-    $("#lastName").val("");
-    $("#userEmail").val("");
-    $("#userPassword").val("");
-  });
-
-  
-var btn = document.querySelector('#logIn');
-var modalDlg = document.querySelector('#image-modal');
-var imageModalCloseBtn = document.querySelector('#image-modal-close');
-btn.addEventListener('click', function(){
-  modalDlg.classList.add('is-active');
+  // Clearing out all fields
+  $("#userId").val("");
+  $("#firstName").val("");
+  $("#lastName").val("");
+  $("#userEmail").val("");
+  $("#userPassword").val("");
 });
 
-imageModalCloseBtn.addEventListener('click', function(){
-  modalDlg.classList.remove('is-active');
+//Storing search term
+var searchTerm;
+
+$(".searchedTerm").on('click', function(){
+var searchTerm = $(".searchBar").val();
+console.log(searchTerm);
 });
+
+$(".searchedTerm").on('click', function(){
+var youtubeQueryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + searchTerm +"&key=AIzaSyBYRddvOZlfP5RohOweM2aMGNgbByOrubc&&maxResults=1&order=viewCount";
+
+//youtube API call
+$.ajax ({
+  url:youtubeQueryURL,
+  method: "GET"
+}).then(function(response) {
+  console.log(response);
+
+  var youtubeItem = response.items[0];
+  var y_name = youtubeItem.snippet.title;
+  var y_url = "https://www.youtube.com/watch?v=" + youtubeItem.id.videoId;
+  var y_publishDate = youtubeItem.snippet.publishedAt; 
+  console.log(y_url);
+  console.log(y_publishDate);
+  console.log(y_name);
+});
+
+//     //youtube API call
+//     $.ajax ({
+//       url:youtubeQueryURL,
+//       method: "GET"
+//     }).then(function(response) {
+//       console.log(response);
+
+//       var y_name = youtubeItem.items.snippet.title;
+//       var y_url = "https://www.youtube.com/watch?v=" + youtubeItem.id.videoId;
+//       var y_publishDate = youtubeItem.snippet.publishedAt; 
+//       console.log(y_url);
+//       console.log(y_publishDate);
+//       console.log(y_name);
+//     });
+});
+
+
