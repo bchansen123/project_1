@@ -60,10 +60,10 @@
 
                                     <div class="container">
                                         <label for="uname"><b>Username</b></label>
-                                        <input type="text" placeholder="Enter Username" name="uname" required>
+                                        <input type="text" id="userId" placeholder="Enter Username" name="uname" required>
 
                                         <label for="psw"><b>Password</b></label>
-                                        <input type="password" placeholder="Enter Password" name="psw" required>
+                                        <input type="password" id="userPassword" placeholder="Enter Password" name="psw" required>
 
                                         <button type="submit">Login</button>
                                         <label>
@@ -112,10 +112,10 @@
 
                 <div class="field has-addons">
                     <div class="control is-expanded">
-                        <input class="input has-text-centered" type="search" placeholder="Search Topics Here">
+                        <input class="input has-text-centered" class="searchBar" type="search" placeholder="Search Topics Here">
                     </div>
                     <div class="control">
-                        <a class="button is-info">Search</a>
+                        <a class="button is-info" class="searchTerm">Search</a>
                     </div>
 
                 </div>
@@ -146,11 +146,11 @@
                                     </figure>
                                 </div>
                                 <div class="media-content">
-                                    <p class="title is-4 no-padding">Twitter</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#">@twitterid</a></span></p>
+                                    <p class="title is-4 no-padding">Giphy</p>
+                                    <p><span class="title is-6"><a href="http://twitter.com/#"></a></span></p>
                                     <p class="subtitle is-6"></p>
                                 </div>
-                                <a href='https://www.twitter.com/' id="twitterbtn" class="fa fa-twitter fa-2x"></a>
+                                <a href='https://www.Giphy.com/' id="twitterbtn" class="fa fa-twitter fa-2x"></a>
                             </div>
                             <div class="content">
                                 The Beast stumbled in the dark for it could no longer see the path. It started to
@@ -254,7 +254,7 @@
                             </div>
                             <div class="card-content">
                             </div>
-                            <div class="content">
+                            <div class="content" id="youtube_description">
                                 Video Description
                             </div>
                         </div>
@@ -282,7 +282,7 @@
                         document.getElementById("mySidebar").style.display = "none";
                     };
                 </script>
-
+ <script src="javascript.js"></script>
 
 </body>
 
