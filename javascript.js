@@ -7,30 +7,20 @@ var config = {
     databaseURL: "https://g-project-f-01.firebaseio.com",
     projectId: "g-project-f-01",
     storageBucket: "g-project-f-01.appspot.com",
-    messagingSenderId: "540111291451",
-    appId: "1:540111291451:web:d2a0d7c5a63619902d081e",
-    measurementId: "G-T840SE3C03"
   };
   // Initialize Firebase
   firebase.initializeApp(config);
-  firebase.analytics();
 
-var database = initializeApp(config);
+var database = firebase.database();
 
 //Grabbing user information from fields that were filled out
 $("#submitButton").on("click", function(event){
     event.preventDefault();
     var userId = $("#userId").val();
-    var firstName = $("#firstName").val();
-    var lastName = $("#lastName").val();
-    var userEmail = $("#userEmail").val();
     var password = $("#userPassword").val();
 
     var newUser = {
         user: userId,
-        f_name: firstName,
-        l_name: lastName,
-        email: userEmail,
         userPassword: password
     };
 
@@ -46,14 +36,46 @@ $("#submitButton").on("click", function(event){
     $("#userPassword").val("");
   });
 
-  
-var btn = document.querySelector('#logIn');
-var modalDlg = document.querySelector('#image-modal');
-var imageModalCloseBtn = document.querySelector('#image-modal-close');
-btn.addEventListener('click', function(){
-  modalDlg.classList.add('is-active');
+//Storing search term
+var searchTerm;
+
+$(".searchedTerm").on('click', function(){
+  var searchTerm = $(".searchBar").val();
+  console.log(searchTerm);
 });
 
-imageModalCloseBtn.addEventListener('click', function(){
-  modalDlg.classList.remove('is-active');
+$(".searchedTerm").on('click', function(){
+  var youtubeQueryURL = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=" + searchTerm +"&key=AIzaSyBYRddvOZlfP5RohOweM2aMGNgbByOrubc&&maxResults=1&order=viewCount";
+
+  //youtube API call
+  $.ajax ({
+    url:youtubeQueryURL,
+    method: "GET"
+  }).then(function(response) {
+    console.log(response);
+
+    var y_name = response.items.snippet.title;
+    var y_url = "https://www.youtube.com/watch?v=" + response.id.videoId;
+    var y_publishDate = response.snippet.publishedAt; 
+    console.log(y_url);
+    console.log(y_publishDate);
+    console.log(y_name);
+  });
+
+    //youtube API call
+    $.ajax ({
+      url:youtubeQueryURL,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+  
+      var y_name = response.items.snippet.title;
+      var y_url = "https://www.youtube.com/watch?v=" + response.id.videoId;
+      var y_publishDate = response.snippet.publishedAt; 
+      console.log(y_url);
+      console.log(y_publishDate);
+      console.log(y_name);
+    });
 });
+
+
