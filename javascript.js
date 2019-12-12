@@ -63,20 +63,29 @@ $.ajax ({
   console.log(y_name);
 });
 
-//     //youtube API call
-//     $.ajax ({
-//       url:youtubeQueryURL,
-//       method: "GET"
-//     }).then(function(response) {
-//       console.log(response);
+var giphyApiKey = "dIxrMMRJwkqETR5DclQQXIBjt2emSBRC";
+var giphyQueryURL = "https://api.giphy.com/v1/gifs/search?api_key=" + giphyApiKey + "&q=" + searchTerm + "&limit=1";
 
-//       var y_name = youtubeItem.items.snippet.title;
-//       var y_url = "https://www.youtube.com/watch?v=" + youtubeItem.id.videoId;
-//       var y_publishDate = youtubeItem.snippet.publishedAt; 
-//       console.log(y_url);
-//       console.log(y_publishDate);
-//       console.log(y_name);
-//     });
+//     //Giphy API call
+    $.ajax ({
+      url:giphyQueryURL,
+      method: "GET"
+    }).then(function(response) {
+      console.log(response);
+
+      var giphyItem = response.data;
+      var g_url = giphyItem[0].images.fixed_height.url;
+      console.log(g_url);
+
+      console.log(giphyItem);
+    });
+
+
+//News API call
+var currentTime = new Date();
+var momentTime = moment().format("YYYY-MM-DD");
+var newsApiKey = "0412b01d03454f5a9f798a6d22c2ea49"
+var newsQueryURL = "https://newsapi.org/v2/everything?from=" + momentTime+ "&q="+ searchTerm + "&sortBy=popularity&api_key=" + newsApiKey;
+console.log(momentTime);
+console.log(newsQueryURL);
 });
-
-
