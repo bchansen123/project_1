@@ -56,13 +56,14 @@ body {
     cursor: pointer;
 }
 
-.fa-pager{
-  background-color: #125688;
+.fa-newspaper-o{
+  background-color: navy;
+  color: white;
     cursor: pointer;
 }
 
-.fa-file-video{
-  background-color: #55acee;
+.fa-file-video-o{
+  background-color: lime;
     color:white;
     cursor: pointer;
 }
