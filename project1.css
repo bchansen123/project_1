@@ -35,6 +35,10 @@ body {
   opacity: .4;
 }
 
+.box{
+  background-color: lightsteelblue;
+}
+
 .fa {
   padding: 5px;
   font-size: 40px;
@@ -62,10 +66,11 @@ body {
     cursor: pointer;
 }
 
-.fa-twitter{
-  background-color: #55acee;
+.fa-newspaper{
+  background-color:black;
     color:white;
     cursor: pointer;
+    padding: 20px;
 }
 
 
