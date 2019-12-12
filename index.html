@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <title>Welcome to Sircle</title>
     <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <!--Bulma-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <!--Font awesome-->
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--Stylesheets-->
     <link rel="stylesheet" href="project1.css">
     <link rel="stylesheet" href="tiles/instagram/instagram.css">
     <link rel="stylesheet" href="tiles/pinterest/pinterest.css">
+    <!--Firebase-->
     <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase.js"></script>
+    <!--Jquery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
@@ -63,10 +68,12 @@
 
                                     <div class="container">
                                         <label for="uname"><b>Username</b></label>
-                                        <input type="text" id="userId" placeholder="Enter Username" name="uname" required>
+                                        <input type="text" id="userId" placeholder="Enter Username" name="uname"
+                                            required>
 
                                         <label for="psw"><b>Password</b></label>
-                                        <input type="password" id="userPassword" placeholder="Enter Password" name="psw" required>
+                                        <input type="password" id="userPassword" placeholder="Enter Password" name="psw"
+                                            required>
 
                                         <button type="submit">Login</button>
                                         <label>
@@ -115,7 +122,8 @@
 
                 <div class="field has-addons">
                     <div class="control is-expanded">
-                        <input class="input has-text-centered" class="searchBar" type="search" placeholder="Search Topics Here">
+                        <input class="input has-text-centered" class="searchBar" type="search"
+                            placeholder="Search Topics Here">
                     </div>
                     <div class="control">
                         <a class="button is-info" class="searchTerm">Search</a>
@@ -123,79 +131,62 @@
 
                 </div>
                 <div class="soc">
-                    <a onclick="myfunction()"><i id="pinterest" class="fa fa-pinterest fa-2x"
-                            aria-hidden="true"></i></a>
+                    <a onclick="myfunction()"><i id="pinterest" class="fa fa-pinterest fa-2x" aria-hidden="true"></i></a>
                     <a onclick="myfunction()"><i id="youtube" class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-                    <a onclick="myfunction()"><i id="instagram" class="fa fa-instagram fa-2x"
-                            aria-hidden="true"></i></a>
-                    <a onclick="myfunction()"><i id="twitter" class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    <a onclick="myfunction()"><i id="news" class="fa fa-pager" aria-hidden="true"></i></a>
+                    <a onclick="myfunction()"><i id="giphy" class="fa fa-file-video fa-2x" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <!-- Twitter -->
+            <!-- giphy -->
             <div class="row columns">
-                <div class="column is-one-third twitter">
+                <div class="column is-one-third giphy">
                     <div class="card large">
+                        <div class="media-content">
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48" class="giphyImage">
+                                            <img src="https://images-na.ssl-images-amazon.com/images/I/113Ja712zxL.png"
+                                                alt="Image">
+                                        </figure>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="card-image">
-                            <figure class="image">
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLNpV2iyRzVUT8jvEK5QCFXqbsX-gdRXhOTciWh0caM2YPcgybA&s"
-                                    id="image-1">
+                            <figure class="image" class="gifImage">
+                                <img src="#" class="gifImage">
                             </figure>
                         </div>
-                        <div class="card-content">
-                            <div class="media">
-                                <div class="media-left">
-                                    <figure class="image is-96x96">
-                                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Image">
-                                    </figure>
-                                </div>
-                                <div class="media-content">
-                                    <p class="title is-4 no-padding">Giphy</p>
-                                    <p><span class="title is-6"><a href="http://twitter.com/#"></a></span></p>
-                                    <p class="subtitle is-6"></p>
-                                </div>
-                                
-                                <a href='https://www.Giphy.com/' id="giphyBtn" img src="https://images-na.ssl-images-amazon.com/images/I/113Ja712zxL.png"></a>
-                            </div>
-                            <div class="content">
-                                The Beast stumbled in the dark for it could no longer see the path. It started to
-                                fracture and weaken, trying to reshape itself into the form of metal. Even the witches
-                                would no longer lay eyes upon it, for it had become hideous and twisted.
-                                <div class="background-icon"><span class="icon-twitter"></span></div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
-                <!--Instagram-->
-                <div class="column is-one-third instagram">
+                <!--News-->
+                <div class="column is-one-third news">
                     <div class="card large">
                         <div class="media-content">
                             <div class="card-content">
                                 <div class="media">
                                     <div class="media-left">
                                         <figure class="image is-48x48">
-                                            <img src="https://bulma.io/images/placeholders/96x96.png"
-                                                alt="Placeholder image">
+                                            <img src="#" class="articleImage">
                                         </figure>
                                     </div>
-                                    <p class="title is-4 no-padding">Instagram</p>
-                                    <a href='https://www.instagram.com/' id="instagrambtn" class="fa fa-instagram fa-2x" style="margin-left: 95px;"></a>
+                                    <p class="title is-4 no-padding" class="articleTitle">Article title</p>
+
                                 </div>
 
                                 <div class="card-image">
-                                    <figure class="image">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLNpV2iyRzVUT8jvEK5QCFXqbsX-gdRXhOTciWh0caM2YPcgybA&s"
-                                            id="image-1">
+                                    <figure class="image" class="articleImage">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLNpV2iyRzVUT8jvEK5QCFXqbsX-gdRXhOTciWh0caM2YPcgybA&s">
                                     </figure>
                                 </div>
                                 <div class="card-content">
                                 </div>
-                                <div class="content">
-                                    The Beast stumbled in the dark for it could no longer see the path. It started to
-                                    fracture
-                                    and
-                                    weaken, trying to reshape itself into the form of metal. <a href="#">#blessed
-                                        #winter
-                                        #coding #branden #jarom #drew</a>
+                                <div class="content" class="articleSummary">
+                                    Brief summary of article <br> <a class="articleLink">Link to article here</a>
                                 </div>
                             </div>
                         </div>
@@ -213,19 +204,17 @@
                                                 alt="Placeholder image">
                                         </figure>
                                     </div>
-                                    <p class="title is-4 no-padding">Poster</p>
-                                    <a href='https://www.pinterest.com/' id="pinterestbtn" class="fa fa-pinterest fa-2x" style="margin-left: 135px;"></a>
+                                    <p class="title is-4 no-padding" class="poster">Poster</p>
                                 </div>
 
                                 <div class="card-image">
-                                    <figure class="image">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLNpV2iyRzVUT8jvEK5QCFXqbsX-gdRXhOTciWh0caM2YPcgybA&s"
-                                            id="image-1">
+                                    <figure class="image" class="pinterestImage">
+                                        <img src="#">
                                     </figure>
                                 </div>
                                 <div class="card-content">
                                 </div>
-                                <div class="content">
+                                <div class="content" class="pinterestLink">
                                     Link to site content came from.
                                 </div>
                             </div>
@@ -246,14 +235,14 @@
                                             alt="Placeholder image">
                                     </figure>
                                 </div>
-                                <p class="title is-4 no-padding">Video Title</p>
-                                <a href='https://www.youtube.com/' id="youtubebtn" class="fa fa-youtube" style="margin-left: 83px;"></a>
+                                <p class="title is-4 no-padding" class="videoTitle">Video Title</p>
+                                <a href='https://www.youtube.com/' id="youtubebtn" class="fa fa-youtube"
+                                    style="margin-left: 83px;"></a>
                             </div>
 
                             <div class="card-image">
                                 <figure class="image">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLNpV2iyRzVUT8jvEK5QCFXqbsX-gdRXhOTciWh0caM2YPcgybA&s"
-                                        id="image-1">
+                                    <img src="#">
                                 </figure>
                             </div>
                             <div class="card-content">
@@ -277,16 +266,7 @@
             </div>
         </footer>
     -->
-                <script>
-                    function w3_open() {
-                        document.getElementById("mySidebar").style.display = "";
-                    };
-
-                    function w3_close() {
-                        document.getElementById("mySidebar").style.display = "none";
-                    };
-                </script>
- <script src="javascript.js"></script>
+                <script src="javascript.js"></script>
 
 </body>
 

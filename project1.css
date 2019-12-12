@@ -56,13 +56,12 @@ body {
     cursor: pointer;
 }
 
-.fa-instagram{
+.fa-pager{
   background-color: #125688;
-    color:white;
     cursor: pointer;
 }
 
-.fa-twitter{
+.fa-file-video{
   background-color: #55acee;
     color:white;
     cursor: pointer;
