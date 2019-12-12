@@ -39,7 +39,16 @@ body {
   background-color: lightsteelblue;
 }
 
-.fa {
+.far{
+  padding: 3px 40px;
+  font-size: 40px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  margin: 6px;
+}
+
+.fa{
   padding: 5px;
   font-size: 40px;
   width: 80px;
@@ -67,10 +76,9 @@ body {
 }
 
 .fa-newspaper{
-  background-color:black;
-    color:white;
+  background-color:#123458;
+  color: white;
     cursor: pointer;
-    padding: 20px;
 }
 
 
