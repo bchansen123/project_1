@@ -50,7 +50,7 @@
                             </a>
                             <hr class="navbar-divider">
                             <button onclick="document.getElementById('id01').style.display='block'"
-                                style="width:auto; text-align: center; margin-right: 10px;">Login</button>
+                                style="width:auto; text-align: center; margin-right: 10px;">Sign Up</button>
 
                             <div id="id01" class="modal">
 
@@ -68,7 +68,7 @@
                                         <label for="psw"><b>Password</b></label>
                                         <input type="password" id="userPassword" placeholder="Enter Password" name="psw" required>
 
-                                        <button type="submit" id = "submitButton">Login</button>
+                                        <button type="submit" id = "submitButton">Sign Up</button>
                                         <label>
                                             <input type="checkbox" checked="checked" name="remember"> <a
                                                 href="#">Remember me</a>
@@ -123,17 +123,17 @@
 
                 </div>
                 <div class="soc">
-                    <a onclick="myfunction()"><i id="pinterest" class="fa fa-pinterest fa-2x"
-                            aria-hidden="true"></i></a>
-                    <a onclick="myfunction()"><i id="youtube" class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
-                    <a onclick="myfunction()"><i id="instagram" class="fa fa-instagram fa-2x"
-                            aria-hidden="true"></i></a>
-                    <a onclick="myfunction()"><i id="twitter" class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+                    <i id="pinterest" class="fa fa-pinterest fa-2x"
+                            aria-hidden="true"></i>
+                    <i id="youtube" class="fa fa-youtube fa-2x" aria-hidden="true"></i>
+                    <i id="news" class="fa fa-newspaper-o fa-2x"
+                            aria-hidden="true"></i>
+                   <i id="twitter" class="fa fa-file-video-o fa-2x" aria-hidden="true"></i>
                 </div>
             </div>
             <!-- Twitter -->
             <div class="row columns">
-                <div class="column is-one-third twitter">
+                <div class="column is-one-third twitter displayCard">
                     <div class="card large">
                         <div class="card-image">
                             <figure class="image">
@@ -149,7 +149,7 @@
                                     </figure>
                                 </div>
                                 <div class="media-content">
-                                    <p class="title is-4 no-padding">Giphy</p>
+                                    <p class="title is-4 no-padding">Amazon</p>
                                     <p><span class="title is-6"><a href="http://twitter.com/#"></a></span></p>
                                     <p class="subtitle is-6"></p>
                                 </div>
@@ -177,11 +177,10 @@
                                                 alt="Placeholder image">
                                         </figure>
                                     </div>
-                                    <p class="title is-4 no-padding">Instagram</p>
-                                    <a href='https://www.instagram.com/' id="instagrambtn" class="fa fa-instagram fa-2x" style="margin-left: 95px;"></a>
+                                    <p class="title is-4 no-padding giphyTitle">Giphy</p>
                                 </div>
 
-                                <div class="card-image">
+                                <div class="card-image giphyImage">
                                     <figure class="image">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLNpV2iyRzVUT8jvEK5QCFXqbsX-gdRXhOTciWh0caM2YPcgybA&s"
                                             id="image-1">
@@ -189,7 +188,7 @@
                                 </div>
                                 <div class="card-content">
                                 </div>
-                                <div class="content">
+                                <div class="content giphyDescription">
                                     The Beast stumbled in the dark for it could no longer see the path. It started to
                                     fracture
                                     and
@@ -213,11 +212,11 @@
                                                 alt="Placeholder image">
                                         </figure>
                                     </div>
-                                    <p class="title is-4 no-padding">Poster</p>
-                                    <a href='https://www.pinterest.com/' id="pinterestbtn" class="fa fa-pinterest fa-2x" style="margin-left: 135px;"></a>
+                                    <p class="title is-4 no-padding newsTitle">Poster</p>
+                                    <a href='https://www.pinterest.com/' id="pinterestbtn" class="fa fa-newspaper-o fa-2x" style="margin-left: 135px;"></a>
                                 </div>
 
-                                <div class="card-image">
+                                <div class="card-image newsImages">
                                     <figure class="image">
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLNpV2iyRzVUT8jvEK5QCFXqbsX-gdRXhOTciWh0caM2YPcgybA&s"
                                             id="image-1">
@@ -225,7 +224,7 @@
                                 </div>
                                 <div class="card-content">
                                 </div>
-                                <div class="content">
+                                <div class="content newsLink">
                                     Link to site content came from.
                                 </div>
                             </div>
@@ -246,11 +245,11 @@
                                             alt="Placeholder image">
                                     </figure>
                                 </div>
-                                <p class="title is-4 no-padding">Video Title</p>
+                                <p class="title is-4 no-padding" id = "ytTitle">Video Title</p>
                                 <a href='https://www.youtube.com/' id="youtubebtn" class="fa fa-youtube" style="margin-left: 83px;"></a>
                             </div>
 
-                            <div class="card-image">
+                            <div class="card-image" id = "ytImages">
                                 <figure class="image">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzLNpV2iyRzVUT8jvEK5QCFXqbsX-gdRXhOTciWh0caM2YPcgybA&s"
                                         id="image-1">
@@ -258,7 +257,7 @@
                             </div>
                             <div class="card-content">
                             </div>
-                            <div class="content" id="youtube_description">
+                            <div class="content ytDescription" id="youtube_description">
                                 Video Description
                             </div>
                         </div>
