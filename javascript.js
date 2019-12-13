@@ -38,6 +38,22 @@ $("#submitButton").on("click", function(event){
   $("#userPassword").val("");
 });
 
+$("#pinterest").on("click", function(){
+  $(".twitter").toggle();
+});
+
+$("#youtube").on("click", function(){
+  $(".instagram").toggle();
+});
+
+$("#news").on("click", function(){
+  $(".pinterest").toggle();
+});
+
+$("#twitter").on("click", function(){
+  $(".youtube").toggle();
+});
+
 //Storing search term
 var searchTerm;
 

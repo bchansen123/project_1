@@ -1,7 +1,7 @@
 body {
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    background-image: url("https://i.ytimg.com/vi/rdGhwe1Q6LY/maxresdefault.jpg") ;
+    background-image: url("background.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -56,19 +56,26 @@ body {
     cursor: pointer;
 }
 
-.fa-instagram{
+.fa-newspaper-o{
   background-color: #125688;
     color:white;
     cursor: pointer;
 }
 
-.fa-twitter{
+.fa-file-video-o{
   background-color: #55acee;
     color:white;
     cursor: pointer;
 }
 
 
+.hiddenCard {
+  display: none;
+}
+
+.displayCard {
+  display: initial;
+}
 
   body {font-family: Arial, Helvetica, sans-serif;}
 
