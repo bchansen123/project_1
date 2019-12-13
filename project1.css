@@ -35,32 +35,13 @@ body {
   opacity: .4;
 }
 
-.box{
-  background-color: lightsteelblue;
-  overflow: hidden;
-  display: block;
-}
-
-.far{
-  padding: 3px 40px;
-  font-size: 40px;
-  width: 80px;
-  text-align: center;
-  text-decoration: none;
-  margin: 6px;
-}
-
-.fa{
+.fa {
   padding: 5px;
   font-size: 40px;
   width: 80px;
   text-align: center;
   text-decoration: none;
   margin: 2px 1px;
-}
-
-.buttonS1{
-  padding: 25px;
 }
 
 .fa-youtube {
@@ -72,6 +53,7 @@ body {
 .fa-pinterest{
     background-color: #cb2027;
     color: white;
+    cursor: pointer;
 }
 
 .fa-instagram{
@@ -80,10 +62,10 @@ body {
     cursor: pointer;
 }
 
-.fa-newspaper{
-  background-color: black;
-  color: white;
-  cursor: pointer;
+.fa-twitter{
+  background-color: #55acee;
+    color:white;
+    cursor: pointer;
 }
 
 
@@ -107,14 +89,6 @@ body {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
-  }
-
-  .buttonS1{
-    color: black;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
     width: 100%;
   }
 
@@ -225,18 +199,4 @@ body {
     .cancelbtn {
        width: 100%;
     }
-  }
-
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 77.4%;
-  }
-
-  .content {
-    padding: 16px;
-  }
-
-  .sticky + .content {
-    padding-top: 60px;
   }
